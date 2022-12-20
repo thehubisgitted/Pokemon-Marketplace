@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.marketclient.MarketController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="187.0" style="-fx-background-color: #00565b;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="pokeballImage" fitHeight="181.0" fitWidth="175.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/pokeball2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserGreeting" alignment="CENTER" layoutX="-1.0" layoutY="182.0" prefHeight="87.0" prefWidth="184.0" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOutButton" layoutX="38.0" layoutY="548.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #1f9ac5;" text="Log Out">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="historyButton" layoutX="38.0" layoutY="499.0" mnemonicParsing="false" onAction="#historyButtonOnAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #1f9ac5;" text="History">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="913.0" style="-fx-background-color: #eeeee4;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="-3.0" layoutY="-2.0" prefHeight="600.0" prefWidth="919.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="pokemon1" alignment="CENTER" layoutX="36.0" layoutY="14.0" prefHeight="43.0" prefWidth="158.0" text="Pokemon 1" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pokedex1" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#pokedex1OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Pokedex Entry">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="pokemon2" alignment="CENTER" layoutX="36.0" layoutY="16.0" prefHeight="43.0" prefWidth="158.0" text="Pokemon 2" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pokedex2" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#pokedex2OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Pokedex Entry">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="pokemon1Price" layoutX="15.0" layoutY="14.0" prefHeight="27.0" prefWidth="164.0" text="Price: N/A" />
+                        <Label fx:id="pokemon1Bid" layoutX="14.0" layoutY="53.0" prefHeight="27.0" prefWidth="165.0" text="Bid Amount: N/A" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="pokemon2Price" layoutX="14.0" layoutY="10.0" prefHeight="27.0" prefWidth="165.0" text="Price: N/A" />
+                        <Label fx:id="pokemon2Bid" layoutX="14.0" layoutY="46.0" prefHeight="27.0" prefWidth="165.0" text="Bid Amount: N/A" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="pokemon3" alignment="CENTER" layoutX="36.0" layoutY="16.0" prefHeight="43.0" prefWidth="158.0" text="Pokemon 3" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pokedex3" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#pokedex3OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Pokedex Entry">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="pokemon4" alignment="CENTER" layoutX="36.0" layoutY="14.0" prefHeight="43.0" prefWidth="158.0" text="Pokemon 4" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pokedex4" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#pokedex4OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Pokedex Entry">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="pokemon5" alignment="CENTER" layoutX="36.0" layoutY="14.0" prefHeight="43.0" prefWidth="158.0" text="Pokemon 5" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pokedex5" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#pokedex5OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Pokedex Entry">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="pokemon3Bid" layoutX="14.0" layoutY="46.0" prefHeight="27.0" prefWidth="165.0" text="Bid Amount: N/A" />
+                        <Label fx:id="pokemon3Price" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="165.0" text="Price: N/A" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="pokemon4Bid" layoutX="14.0" layoutY="46.0" prefHeight="27.0" prefWidth="165.0" text="Bid Amount: N/A" />
+                        <Label fx:id="pokemon4Price" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="165.0" text="Price: N/A" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="pokemon5Bid" layoutX="14.0" layoutY="46.0" prefHeight="27.0" prefWidth="165.0" text="Bid Amount: N/A" />
+                        <Label fx:id="pokemon5Price" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="165.0" text="Price: N/A" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button fx:id="pokemon1Buy" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#buy1OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Buy Now!" />
+                        <Button fx:id="pokemon1BidButton" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#bid1OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Bid" />
+                        <TextField fx:id="pokemon1Textfield" layoutX="41.0" layoutY="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="pokemon2Buy" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#buy2OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Buy Now!" />
+                        <Button fx:id="pokemon2BidButton" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#bid2OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Bid" />
+                        <TextField fx:id="pokemon2Textfield" layoutX="40.0" layoutY="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="pokemon3Buy" layoutX="40.0" layoutY="14.0" mnemonicParsing="false" onAction="#buy3OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Buy Now!" />
+                        <Button fx:id="pokemon3BidButton" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#bid3OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Bid" />
+                        <TextField fx:id="pokemon3Textfield" layoutX="40.0" layoutY="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="pokemon4Buy" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#buy4OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Buy Now!" />
+                        <Button fx:id="pokemon4BidButton" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#bid4OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Bid" />
+                        <TextField fx:id="pokemon4Textfield" layoutX="40.0" layoutY="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="pokemon5Buy" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#buy5OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Buy Now!" />
+                        <Button fx:id="pokemon5BidButton" layoutX="42.0" layoutY="80.0" mnemonicParsing="false" onAction="#bid5OnAction" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #1f9ac5;" text="Bid" />
+                        <TextField fx:id="pokemon5Textfield" layoutX="40.0" layoutY="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Label fx:id="saleStatus1" alignment="CENTER" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" text="For Sale">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="50.0" prefHeight="20.0" prefWidth="121.0" text="Highest Bidder">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bidderName1" alignment="CENTER" layoutX="54.0" layoutY="70.0" prefHeight="20.0" prefWidth="121.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalbid1" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="saleStatus2" alignment="CENTER" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" text="For Sale">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bidderName2" alignment="CENTER" layoutX="54.0" layoutY="70.0" prefHeight="20.0" prefWidth="121.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="50.0" prefHeight="20.0" prefWidth="121.0" text="Highest Bidder">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalbid2" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="saleStatus3" alignment="CENTER" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" text="For Sale">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="50.0" prefHeight="20.0" prefWidth="121.0" text="Highest Bidder">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bidderName3" alignment="CENTER" layoutX="54.0" layoutY="69.0" prefHeight="20.0" prefWidth="121.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalbid3" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="89.0" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="saleStatus4" alignment="CENTER" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" text="For Sale">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="50.0" prefHeight="20.0" prefWidth="121.0" text="Highest Bidder">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bidderName4" alignment="CENTER" layoutX="54.0" layoutY="70.0" prefHeight="20.0" prefWidth="121.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalbid4" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="saleStatus5" alignment="CENTER" layoutX="54.0" layoutY="14.0" prefHeight="20.0" prefWidth="121.0" text="For Sale">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="60.0" layoutY="50.0" prefHeight="20.0" prefWidth="121.0" text="Highest Bidder">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bidderName5" alignment="CENTER" layoutX="60.0" layoutY="70.0" prefHeight="20.0" prefWidth="121.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="finalbid5" alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="90.0" prefHeight="17.0" prefWidth="131.0" textAlignment="CENTER" />
+                     </children></AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
