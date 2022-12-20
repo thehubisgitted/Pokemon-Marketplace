@@ -25,6 +25,6 @@ Wrote it from scratch in 4 days and then moved on but it was a really fun projec
 
 **Market View**
 
-<img width="430" alt="market view pokemon" src="https://user-images.githubusercontent.com/61165807/208618637-27c46bbe-d5ba-4cce-bede-be3e0d4d0ceb.PNG">
+<img width="482" alt="market view pokemon" src="https://user-images.githubusercontent.com/61165807/208618637-27c46bbe-d5ba-4cce-bede-be3e0d4d0ceb.PNG">
 
 
