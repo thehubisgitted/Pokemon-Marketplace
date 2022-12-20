@@ -2,9 +2,12 @@
 
 - Coded exclusively using Java and JavaFX
 - Create an Account, Login, and Bid on different Pokemon (Static)
+
 Multiple accounts can bid in real time with background music and sound effects
--Market Client was built as an Intellij Project 
--Market Server was built in VSCode
+
+- Market Client was built as an Intellij Project 
+- Market Server was built in VSCode
+
 Uploaded to Git for Visibility
 
 Project Structure is VERY messy it was my first real fullstack project so there were a lot of design flaws.
