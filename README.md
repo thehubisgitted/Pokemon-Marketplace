@@ -16,9 +16,11 @@ MediaPlayer Dependency Bug in Market Client (have to set it up correctly within 
 Wrote it from scratch in 4 days and then moved on but it was a really fun project and my introduction to GUI's
 
 **LOGIN PAGE**
+
 <img width="482" alt="pokemon marketplace login" src="https://user-images.githubusercontent.com/61165807/208618297-9f5fe569-66a8-4f40-8dc0-7a7445f6188b.PNG">
 
 **Market View**
+
 <img width="430" alt="market view pokemon" src="https://user-images.githubusercontent.com/61165807/208618637-27c46bbe-d5ba-4cce-bede-be3e0d4d0ceb.PNG">
 
 
